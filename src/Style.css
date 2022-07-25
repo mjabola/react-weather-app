@@ -1,0 +1,129 @@
+body {
+  background-color: #fff6ea;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  color: #806054;
+  font-size: 30pt;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+h2,
+h3,
+.day {
+  color: #806054;
+  text-transform: capitalize;
+}
+
+a {
+  color: #b38676;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #806054;
+}
+
+.container {
+  padding-left: 50px;
+}
+
+.container .active {
+  color: #806054;
+  cursor: default;
+}
+
+.container .active:hover {
+  text-decoration: none;
+}
+
+sup {
+  font-size: 12pt;
+}
+
+button {
+  border-radius: 10px;
+  margin: 20px 5px;
+  display: inline-block;
+  background-color: #ebd8c3;
+  border: 2px solid #ebd8c3;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 2px 3px 5px 1px #f0f0f0;
+}
+
+button:hover {
+  color: #ebd8c3;
+  background: #fff;
+  border: 2px solid #ebd8c3;
+  transition: all 200ms ease;
+}
+
+div .button-wrapper {
+  text-align: center;
+}
+
+div .weather-app {
+  background-color: #fff;
+  border: 1px solid #ebd8c3;
+  border-radius: 15px;
+  padding: 20px 20px 10px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.last-updated {
+  font-size: 8pt;
+}
+
+.enter-city {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.weather-forecast {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.temp-forecast {
+  font-size: 9pt;
+  padding: 10px;
+}
+
+.min-temp-forecast {
+  opacity: 0.5;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.bottom-container {
+  text-align: center;
+  line-height: 20pt;
+  padding: 14px 16px;
+}
+
+.icon {
+  max-width: 50px;
+}
