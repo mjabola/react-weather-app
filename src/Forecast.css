@@ -1,0 +1,27 @@
+.weather-forecast {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.temp-forecast {
+  font-size: 9pt;
+  padding: 10px;
+}
+
+.min-temp-forecast {
+  opacity: 0.5;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.bottom-container {
+  text-align: center;
+  line-height: 20pt;
+  padding: 14px 16px;
+}
+
+.icon {
+  max-width: 50px;
+}

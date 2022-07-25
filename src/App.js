@@ -1,15 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Search from "./Search";
+import Weather from "./Weather";
+import Footer from "./Footer";
+import Forecast from "./Forecast";
+
+import "./Style.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Testing
-        </p>
-      </header>
+      <h1 className="text-center">How's the Weather?</h1>
+      <div className="weather-app">
+        <Search />
+        <Weather />
+        <Forecast />
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -18,14 +18,14 @@ export default function Weather() {
             <img src={Icon} alt="icon" />
           </div>
 
-          <div class="row">
+          <div className="row">
             <div class="col-6">
               <ul>
                 <li id="weather-info"> </li>
                 <li className="last-updated">Last updated Friday, 12:56</li>
               </ul>
             </div>
-            <div class="col-6">
+            <div className="col-6">
               <ul>
                 <li>Humidity: 94%</li>
                 <li>Wind: 3.6 km/h</li>
