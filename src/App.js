@@ -1,6 +1,5 @@
 import Search from "./Search";
 import Weather from "./Weather";
-import Footer from "./Footer";
 import Forecast from "./Forecast";
 
 import "./Style.css";
@@ -14,7 +13,11 @@ function App() {
         <Weather />
         <Forecast />
       </div>
-      <Footer />
+      <div className="bottom-container">
+        Coded by Margarita Jabola
+        <br />
+        <a href="mailto:mhjabola@gmail.com">GET IN TOUCH</a>
+      </div>
     </div>
   );
 }
