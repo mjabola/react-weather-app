@@ -72,7 +72,6 @@ export default function Search() {
         />
         <div className="button-wrapper">
           <button type="submit">Search</button>
-          <button type="submit">Current Location</button>
         </div>
       </form>
       <div>{result}</div>
