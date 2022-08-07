@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import WeatherToday from "./WeatherToday";
 
 import "./Style.css";
 
@@ -10,48 +11,24 @@ export default function Search() {
 
   function displayWeather(response) {
     setData({
-      temp: response.data.main.temp,
+      temp: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
+      date: new Date(response.data.dt * 1000),
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      city: response.data.name,
     });
   }
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d573e02a83a53078fa38c4d5f190a26a&units=metric`;
+  let apiKey = `7bad46c3aca76e0858f4cd7506385850`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(url).then(displayWeather);
 
   function handleSubmit(event) {
     event.preventDefault();
     setResult(
-      <div>
-        <div className="row">
-          <div className="col-6">
-            <h3>{city}</h3>
-            <h2>
-              {data.temp} <sup>°C | °F</sup>
-            </h2>
-          </div>
-          <div className="col-6">
-            <img src="rain-icon.png" alt="icon" />
-          </div>
-
-          <div className="row">
-            <div class="col-6">
-              <ul>
-                <li id="weather-info"> </li>
-                <li className="last-updated">As of Friday, 12:56</li>
-              </ul>
-            </div>
-            <div className="col-6">
-              <ul>
-                <li>Humidity: {data.humidity}%</li>
-                <li>Wind: {data.wind} km/h</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <WeatherToday data={data} />
     );
   }
 
