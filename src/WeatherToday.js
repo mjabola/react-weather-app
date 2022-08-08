@@ -16,7 +16,7 @@ export default function WeatherToday(props) {
           </div>
 
           <div className="row">
-            <div class="col-6">
+            <div className="col-6">
               <ul>
                 <li id="weather-info">{props.data.description}</li>
                 <li className="last-updated">

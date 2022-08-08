@@ -21,21 +21,20 @@ export default function Search() {
     });
   }
 
-  let apiKey = `7bad46c3aca76e0858f4cd7506385850`;
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(url).then(displayWeather);
-
   function handleSubmit(event) {
     event.preventDefault();
-    setResult(
-      <WeatherToday data={data} />
-    );
+    setResult(<WeatherToday data={data} />);
   }
 
   function displayCity(event) {
     event.preventDefault();
     setCity(event.target.value);
   }
+
+  let apiKey = "7bad46c3aca76e0858f4cd7506385850";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(url).then(displayWeather);
+
   return (
     <div className="Search">
       <form className="city-search" onSubmit={handleSubmit}>
@@ -43,8 +42,8 @@ export default function Search() {
           type="search"
           className="form-control enter-city"
           placeholder="Enter a city"
-          autocomplete="off"
-          autofocus="off"
+          autoComplete="off"
+          autoFocus="off"
           onChange={displayCity}
         />
         <div className="button-wrapper">
