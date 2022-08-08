@@ -17,7 +17,6 @@ export default function WeatherToday(props) {
             <div className="float-left">
               <WeatherIcon
                 code={props.data.icon}
-                alt={props.data.description}
               />
             </div>
           </div>

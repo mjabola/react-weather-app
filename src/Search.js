@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherToday from "./WeatherToday";
+import Forecast from "./Forecast";
 import axios from "axios";
 
 import "./Style.css";
@@ -18,6 +19,10 @@ export default function Search(props) {
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
       city: response.data.name,
+      coordinates: response.data.coord,
+      lat: response.data.coord.lat,
+  long: response.data.coord.long,
+  forecast: response.data.daily,
     });
   }
 
@@ -56,6 +61,7 @@ if (data.ready) {
         </div>
       </form>
       <WeatherToday data={data} />
+      <Forecast data={data} />
     </div>
   );
 }

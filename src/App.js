@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "./Search";
-import Forecast from "./Forecast";
 
 import "./Style.css";
 
@@ -10,7 +9,6 @@ function App() {
       <h1 className="text-center">How's the Weather?</h1>
       <div className="weather-app">
         <Search defaultCity="Manila" />
-        <Forecast />
       </div>
       <div className="bottom-container">
         Coded by Margarita Jabola
