@@ -16,7 +16,7 @@ export default function WeatherToday(props) {
           <div className="col-6">
             <div className="float-left">
               <WeatherIcon
-                code={props.data.icon}
+                code={props.data.icon} size={67}
               />
             </div>
           </div>

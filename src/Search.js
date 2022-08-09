@@ -20,9 +20,6 @@ export default function Search(props) {
       icon: response.data.weather[0].icon,
       city: response.data.name,
       coordinates: response.data.coord,
-      lat: response.data.coord.lat,
-  long: response.data.coord.long,
-  forecast: response.data.daily,
     });
   }
 
@@ -61,7 +58,7 @@ if (data.ready) {
         </div>
       </form>
       <WeatherToday data={data} />
-      <Forecast data={data} />
+      <Forecast coordinates={data.coordinates} />
     </div>
   );
 }
