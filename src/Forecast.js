@@ -19,7 +19,7 @@ console.log(forecastData);
       <div className="Forecast weather-forecast">
         <div className="row">
           <div className="col-2">
-            <ForecastDay data={forecastData[0]} />
+            <ForecastDay data={forecastData[1]} />
           </div>
         </div>
       </div>
