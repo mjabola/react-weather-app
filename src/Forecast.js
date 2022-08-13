@@ -18,9 +18,16 @@ console.log(forecastData);
     return (
       <div className="Forecast weather-forecast">
         <div className="row">
-          <div className="col-2">
-            <ForecastDay data={forecastData[1]} />
-          </div>
+          {forecastData.map(function(dailyForecast, index) {
+            if (index < 5) {
+                             return (
+                               <div className="col" key={index}>
+                                 <ForecastDay data={dailyForecast} />
+                               </div>
+                             );
+                           }
+          })}
+
         </div>
       </div>
     );
