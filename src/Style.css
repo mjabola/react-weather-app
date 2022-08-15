@@ -103,3 +103,10 @@ li {
 .icon {
   max-width: 50px;
 }
+
+.bottom-container {
+  font-size: 10pt;
+  text-align: center;
+  line-height: 20pt;
+  padding: 14px 16px;
+}

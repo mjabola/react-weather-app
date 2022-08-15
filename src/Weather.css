@@ -5,3 +5,8 @@
 .last-updated {
   font-size: 8pt;
 }
+
+div .weather-info {
+padding-left: 40px;
+padding-right: 0px;
+}

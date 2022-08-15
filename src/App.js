@@ -8,12 +8,17 @@ function App() {
     <div className="App">
       <h1 className="text-center">How's the Weather?</h1>
       <div className="weather-app">
-        <Search defaultCity="Manila" />
+        <Search defaultCity="Brisbane" />
       </div>
       <div className="bottom-container">
-        Coded by Margarita Jabola
-        <br />
-        <a href="mailto:mhjabola@gmail.com">GET IN TOUCH</a>
+        This project was coded by{" "}
+        <strong>
+          <a href="https://www.linkedin.com/in/margarita-jabola/ ">
+            Margarita Jabola
+          </a>
+        </strong><br />
+        Open-sourced on{" "}<a href="https://github.com/mjabola/react-weather-app">GitHub</a> and
+        hosted on <a href="https://celadon-mooncake-b6ba7b.netlify.app">Netlify</a>
       </div>
     </div>
   );
