@@ -39,7 +39,7 @@ return (
       <span className="temp-forecast">{maxTemp()}</span>
       <br />
       <span className="min-temp-forecast">
-        {minTemp()}°
+        {minTemp()}
       </span>
     </p>
   </div>
