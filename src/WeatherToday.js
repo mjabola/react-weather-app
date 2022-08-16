@@ -31,11 +31,11 @@ export default function WeatherToday(props) {
           <div className="col-6">
             <ul>
               <li>
-                <i class="fa-solid fa-droplet"></i> Humidity:{" "}
+                Humidity:{" "}
                 {props.data.humidity}%
               </li>
               <li>
-                <i class="fa-solid fa-wind"></i> Wind: {props.data.wind} km/h
+                Wind: {props.data.wind} km/h
               </li>
             </ul>
           </div>
