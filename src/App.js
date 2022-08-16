@@ -17,7 +17,7 @@ function App() {
             Margarita Jabola
           </a>
         </strong><br />
-        Open-sourced on{" "}<a href="https://github.com/mjabola/react-weather-app">GitHub</a> and
+        This is open-sourced on{" "}<a href="https://github.com/mjabola/react-weather-app">GitHub</a> and
         hosted on <a href="https://celadon-mooncake-b6ba7b.netlify.app">Netlify</a>
       </div>
     </div>
